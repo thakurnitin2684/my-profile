@@ -1,0 +1,14 @@
+.MainBox {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+li {
+  margin-top: 10px;
+}

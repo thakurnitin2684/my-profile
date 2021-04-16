@@ -1,0 +1,10 @@
+.MainBox {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+a {
+  margin-left: 10px;
+}
