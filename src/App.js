@@ -4,13 +4,16 @@ import TopBar from "./components/TopBar";
 import Particles from "react-particles-js";
 import ParticleConfig from "./config/particle-config";
 import MainContent from "./components/MainContent";
+import Fade from "react-reveal/Fade";
+
 const App = () => {
   return (
     <div className="App">
-      <div className="SidebarBig">
-        <SidebarBig />
-      </div>
-
+      <Fade left>
+        <div className="SidebarBig">
+          <SidebarBig />
+        </div>
+      </Fade>
       <div className="SidebarSmall">
         <TopBar />
       </div>

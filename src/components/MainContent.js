@@ -1,164 +1,115 @@
 import React from "react";
 import "./MainContent.css";
 import IMG_PLACEHOLDER from "../images/profile.png";
+import { Animated } from "react-animated-css";
+import { ProjectGrid } from "./ProjectGrid";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
+import Skills from "./Skills";
+import Contact from "./Contact";
 const MainContent = () => {
   return (
     <div>
       <div className="wrapper">
         <div className="ImgDiv">
-          <img src={IMG_PLACEHOLDER} alt="profile_img" />
+          <Fade top>
+            <img src={IMG_PLACEHOLDER} alt="profile_img" />
+          </Fade>
         </div>
-        <div className="Title">
-          <h2>Hi, I am Nitin Thakur</h2>
-        </div>
-      </div>
-      <div className="summary">
-        asdfl;kjjjjjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkjasdfdfsdfsdfdsfsadfsdafsdafdasf
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-        asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdj
-      </div>
 
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
+        <div className="Title">
+          <Fade bottom>
+            <h2>Hi, I am Nitin Thakur</h2>
+          </Fade>
         </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
+      </div>
+      <Zoom>
+        <div className="summary">
+          asdfl;kjjjjjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkjasdfdfsdfsdfdsfsadfsdafsdafdasf
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
+          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdj
         </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
+      </Zoom>
+      <h2 id="projects">Projects</h2>
+      <Zoom>
+        <div className="grid">
+          {projects &&
+            projects.map((x) => (
+              <ProjectGrid
+                id={x.id}
+                url={x.url}
+                name={x.name}
+                skills={x.skills}
+              />
+            ))}
         </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div>
-            <img class="card-img" src="./img/rome.jpg" alt="Rome" />
-            <div class="card-content">
-              <h1 class="card-header">Rome</h1>
-              <p class="card-text">
-                Rome is known for its stunning <strong> architecture</strong>,
-                with the Colleseum, Pantheon, and Trevi Fountain as the main
-                attractions.
-              </p>
-              <button class="card-btn">
-                Visit <span>&rarr;</span>
-              </button>
-            </div>
-          </div>
-        </div>
+      </Zoom>
+      <div>
+        <Skills />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
 };
-
+const projects = [
+  {
+    // Add image in './styles/images.css' in #project1
+    id: "project1",
+    name: "Project 1",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project2
+    id: "project2",
+    name: "Project 2",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project3
+    id: "project3",
+    name: "Project 3",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project4
+    id: "project4",
+    name: "Project 4",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project5
+    id: "project5",
+    name: "Project 5",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project6
+    id: "project6",
+    name: "Project 6",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+  {
+    // Add image in './styles/images.css' in #project6
+    id: "project6",
+    name: "Project 6",
+    skills: ["HTML, CSS, JS"],
+    url: "https://github.com/thakurnitin2684",
+  },
+];
 export default MainContent;
