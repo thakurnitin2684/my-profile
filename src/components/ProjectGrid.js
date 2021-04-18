@@ -1,5 +1,4 @@
 import React from "react";
-import IMG_PLACEHOLDER from "../images/profile.png";
 import Zoom from "react-reveal/Zoom";
 import SCREEN_TIME from "../images/screentime.png";
 

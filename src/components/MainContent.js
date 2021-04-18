@@ -1,7 +1,6 @@
 import React from "react";
 import "./MainContent.css";
 import IMG_PLACEHOLDER from "../images/profile.png";
-import { Animated } from "react-animated-css";
 import { ProjectGrid } from "./ProjectGrid";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
