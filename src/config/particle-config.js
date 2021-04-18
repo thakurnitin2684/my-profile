@@ -1,14 +1,14 @@
 const ParticleConfig = {
   particles: {
     number: {
-      value: 6,
+      value: 10,
       density: {
         enable: true,
         value_area: 800,
       },
     },
     color: {
-      value: "#ababaf",
+      value: "#4d5066",
     },
     shape: {
       type: "polygon",
@@ -26,7 +26,7 @@ const ParticleConfig = {
       },
     },
     opacity: {
-      value: 0.3,
+      value: 0.2964458545652664,
       random: true,
       anim: {
         enable: false,
@@ -36,11 +36,11 @@ const ParticleConfig = {
       },
     },
     size: {
-      value: 160,
+      value: 130,
       random: false,
       anim: {
         enable: true,
-        speed: 10,
+        speed: 5,
         size_min: 40,
         sync: false,
       },
@@ -54,7 +54,7 @@ const ParticleConfig = {
     },
     move: {
       enable: true,
-      speed: 8,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,
@@ -92,7 +92,7 @@ const ParticleConfig = {
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 0,
+        speed: 3,
       },
       repulse: {
         distance: 200,

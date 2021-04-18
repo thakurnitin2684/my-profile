@@ -27,6 +27,13 @@ const App = () => {
         </div>
         <div className="MainContentInner">
           <MainContent />
+          <Fade bottom>
+            <div className="Cfooter">
+              <p className="ftext">
+                Made by Nitin Thakur <span>&#169;</span>
+              </p>
+            </div>
+          </Fade>
         </div>
       </div>
     </div>

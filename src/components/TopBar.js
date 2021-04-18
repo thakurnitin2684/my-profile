@@ -6,11 +6,10 @@ const TopBar = () => {
   return (
     <Fade top>
       <div className="MainBox">
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#">Skills</a>
-        <a href="#">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </Fade>
   );

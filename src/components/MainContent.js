@@ -13,32 +13,33 @@ const MainContent = () => {
       <div className="wrapper">
         <div className="ImgDiv">
           <Fade top>
-            <img src={IMG_PLACEHOLDER} alt="profile_img" />
+            <img
+              className="profile-img"
+              src={IMG_PLACEHOLDER}
+              alt="profile_img"
+            />
           </Fade>
         </div>
 
-        <div className="Title">
+        <div id="about" className="Title">
           <Fade bottom>
             <h2>Hi, I am Nitin Thakur</h2>
           </Fade>
         </div>
       </div>
       <Zoom>
-        <div className="summary">
-          asdfl;kjjjjjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkjasdfdfsdfsdfdsfsadfsdafsdafdasf
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;sladfkj
-          asldkfjjjjjjjjjjjjjjjjjjjjjjjjjjjjlfkjsadflksdj
-        </div>
+        <p className="summary">
+          Your summary is the one place you define yourself in your own words,
+          free of start dates and titles. Whether you use it to put career
+          choices in context, highlight your biggest achievements, or show off
+          your personality, the summary is your chance to put your best self out
+          there. It strengthens your first impression in a way no other profile
+          section can.
+        </p>
       </Zoom>
-      <h2 id="projects">Projects</h2>
+      <h2 id="projects" className="text-anim">
+        Projects
+      </h2>
       <Zoom>
         <div className="grid">
           {projects &&
@@ -48,10 +49,12 @@ const MainContent = () => {
                 url={x.url}
                 name={x.name}
                 skills={x.skills}
+                summary={x.summary}
               />
             ))}
         </div>
       </Zoom>
+
       <div>
         <Skills />
       </div>
@@ -67,6 +70,8 @@ const projects = [
     id: "project1",
     name: "Project 1",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -74,6 +79,8 @@ const projects = [
     id: "project2",
     name: "Project 2",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -81,6 +88,7 @@ const projects = [
     id: "project3",
     name: "Project 3",
     skills: ["HTML, CSS, JS"],
+    summary: "Rome is known for its stunning  architecture with the Colleseum",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -88,6 +96,8 @@ const projects = [
     id: "project4",
     name: "Project 4",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.  Pantheon, and Trevi Fountain as the main attractions. Pantheon, and Trevi Fountain as the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -95,6 +105,8 @@ const projects = [
     id: "project5",
     name: "Project 5",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -102,6 +114,8 @@ const projects = [
     id: "project6",
     name: "Project 6",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions. architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
   {
@@ -109,6 +123,8 @@ const projects = [
     id: "project6",
     name: "Project 6",
     skills: ["HTML, CSS, JS"],
+    summary:
+      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
     url: "https://github.com/thakurnitin2684",
   },
 ];

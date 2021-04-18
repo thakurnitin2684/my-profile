@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 .App {
   height: 100vh;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
   overflow-y: hidden;
+  font-family: "Poppins", sans-serif;
 }
 .SidebarBig {
   flex: 20%;
@@ -33,7 +36,6 @@
   objectfit: cover;
   height: 100vh;
   width: 100%;
-  zindex: 5;
 }
 .partBg > div {
   height: 100%;
@@ -51,4 +53,15 @@
     display: block;
     font-size: small;
   }
+}
+
+.Cfooter {
+  background: black;
+  height: 70px;
+}
+
+.ftext {
+  color: white;
+  margin: 0px;
+  transform: translateY(50%);
 }

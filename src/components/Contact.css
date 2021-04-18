@@ -5,11 +5,11 @@
   flex-wrap: wrap;
   padding: 10px;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .contact-item {
   overflow: hidden;
-  cursor: pointer;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -18,9 +18,35 @@
 .contact-item:hover {
 }
 .contact-img {
+  justify-content: center;
+  vertical-align: middle;
+  margin-top: 15px;
   width: 40px;
   height: 40px;
 }
+
 .contact-text {
+  margin-left: 5px;
   color: rgb(0, 0, 0);
+}
+.contact-text2 {
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  cursor: pointer;
+
+  background: linear-gradient(
+    to right,
+    rgb(11, 7, 236),
+    rgb(34, 40, 131) 50%,
+    rgb(0, 0, 0) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.contact-text2:hover {
+  background-position: 0 100%;
 }
