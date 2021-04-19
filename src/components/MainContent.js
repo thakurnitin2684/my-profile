@@ -36,23 +36,23 @@ const MainContent = () => {
           section can.
         </p>
       </Zoom>
-      <h2 id="projects" className="text-anim">
+      <h2 id="projects" className="text-anim" style={{ paddingTop: "80px" }}>
         Projects
       </h2>
-      <Zoom>
-        <div className="grid">
-          {projects &&
-            projects.map((x) => (
-              <ProjectGrid
-                id={x.id}
-                url={x.url}
-                name={x.name}
-                skills={x.skills}
-                summary={x.summary}
-              />
-            ))}
-        </div>
-      </Zoom>
+      {/* <Zoom> */}
+      <div className="grid">
+        {projects &&
+          projects.map((x) => (
+            <ProjectGrid
+              id={x.id}
+              url={x.url}
+              name={x.name}
+              skills={x.skills}
+              summary={x.summary}
+            />
+          ))}
+      </div>
+      {/* </Zoom> */}
 
       <div>
         <Skills />

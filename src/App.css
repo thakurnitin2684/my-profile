@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .App {
-  height: 100vh;
+  height: calc(100% - 100px);
   display: flex;
   text-align: center;
   flex-wrap: wrap;
@@ -17,15 +17,20 @@
   height: 80px;
   background-color: black;
   display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .MainContentOuter {
-  height: 100%;
+  height: calc(100% - 100px);
   flex: 70%;
   position: relative;
   overflow: hidden;
 }
 .MainContentInner {
-  height: 100%;
+  height: calc(100% - 100px);
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
@@ -52,6 +57,9 @@
   .SidebarSmall {
     display: block;
     font-size: small;
+  }
+  .MainContentOuter {
+    margin-top: 80px;
   }
 }
 
