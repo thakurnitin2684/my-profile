@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <Zoom>
       <div>
-        <h2 id="contact" className="text-anim" style={{ paddingTop: "80px" }}>
+        <h2 id="contact" className="text-anim" style={{ paddingTop: "120px" }}>
           Contact Details
         </h2>
         <div className="contact-box">

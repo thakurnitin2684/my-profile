@@ -6,6 +6,15 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import SCREEN_TIME from "../images/screentime.png";
+import ALARM from "../images/alarm.png";
+import BOX_OFFICE from "../images/boxoffice.png";
+import CODEFORCES from "../images/codeforces.png";
+import MY_TASKS from "../images/mytasks.png";
+import NAKSHA from "../images/naksha.png";
+import STICK from "../images/stick.png";
+import TTT from "../images/ttt.png";
+
 const MainContent = () => {
   return (
     <div>
@@ -28,12 +37,11 @@ const MainContent = () => {
       </div>
       <Zoom>
         <p className="summary">
-          Your summary is the one place you define yourself in your own words,
-          free of start dates and titles. Whether you use it to put career
-          choices in context, highlight your biggest achievements, or show off
-          your personality, the summary is your chance to put your best self out
-          there. It strengthens your first impression in a way no other profile
-          section can.
+          I am an Android Developer and enthusiastic to learn new technologies
+          and have some knowledge in web development. Eager to work in a tech
+          company. Looking forward to generate new ideas and work on some good
+          ideas. Focused on being more and more efficient and have a B Tech.
+          Degree in Computer Science and Engineering.
         </p>
       </Zoom>
       <h2 id="projects" className="text-anim" style={{ paddingTop: "80px" }}>
@@ -45,10 +53,12 @@ const MainContent = () => {
           projects.map((x) => (
             <ProjectGrid
               id={x.id}
-              url={x.url}
               name={x.name}
-              skills={x.skills}
+              tags={x.tags}
               summary={x.summary}
+              url1={x.url1}
+              url2={x.url2}
+              img={x.img}
             />
           ))}
       </div>
@@ -65,66 +75,85 @@ const MainContent = () => {
 };
 const projects = [
   {
-    // Add image in './styles/images.css' in #project1
     id: "project1",
-    name: "Project 1",
-    skills: ["HTML, CSS, JS"],
+    name: "ScreenTime Rank",
+    tags: ["Kotlin", "Firebase", "NoSQL"],
     summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+      "An android app that will show you your rank in a group on basis of your screen time to help you monitor your screentime",
+    url1:
+      "https://play.google.com/store/apps/details?id=com.thakurnitin2684.screentimerank",
+    url2: "https://github.com/thakurnitin2684/ScreenTimeRank",
+    img: SCREEN_TIME,
   },
   {
-    // Add image in './styles/images.css' in #project2
     id: "project2",
-    name: "Project 2",
-    skills: ["HTML, CSS, JS"],
+    name: "My Tasks",
+    tags: ["Android", "Sqlite", "Kotlin"],
     summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions. the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+      "A Minimal Tasks planner app.Helps you to create tasks and reminds you about them through notifications.",
+    url1:
+      "https://play.google.com/store/apps/details?id=com.thakurnitin2684.mytasks",
+    url2: "https://github.com/thakurnitin2684/MyTasks",
+    img: MY_TASKS,
   },
   {
-    // Add image in './styles/images.css' in #project3
     id: "project3",
-    name: "Project 3",
-    skills: ["HTML, CSS, JS"],
-    summary: "Rome is known for its stunning  architecture with the Colleseum",
-    url: "https://github.com/thakurnitin2684",
+    name: "Codefoces.info",
+    tags: ["Android", "Kotlin"],
+    summary:
+      "Android App fetches data from codeforces Api. Useful if you are a competitive coder on codeforces,",
+    url1:
+      "https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces",
+    url2: "https://github.com/thakurnitin2684/Codeforces.info",
+    img: CODEFORCES,
   },
   {
-    // Add image in './styles/images.css' in #project4
     id: "project4",
-    name: "Project 4",
-    skills: ["HTML, CSS, JS"],
-    summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.  Pantheon, and Trevi Fountain as the main attractions. Pantheon, and Trevi Fountain as the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+    name: "TIC TAC TOE",
+    tags: ["React.js", "Javascript", "SCSS"],
+    summary: "Tic tac toe game made with react.js",
+    url1: "http://thakurnitin2684ttt.surge.sh/",
+    url2: "https://github.com/thakurnitin2684/tictactoe",
+    img: TTT,
   },
   {
-    // Add image in './styles/images.css' in #project5
+    id: "project7",
+    name: "Naksha Home Decor",
+    tags: ["Html", "CSS"],
+    summary:
+      "WebDevelopment Project. Static Business Website for Home Decor selling shop.",
+    url1: "https://thakurnitin2684.github.io/nakshahomedecor/",
+    url2: "https://github.com/thakurnitin2684/nakshahomedecor",
+    img: NAKSHA,
+  },
+  {
     id: "project5",
-    name: "Project 5",
-    skills: ["HTML, CSS, JS"],
-    summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+    name: "Stick-Around",
+    tags: ["Unity", "C#", "Game"],
+    summary: "Minimal Game made with Unity Game development engine.",
+    url1:
+      "https://play.google.com/store/apps/details?id=com.thakurnitin.StickAround&hl=en",
+    url2: "https://github.com/thakurnitin2684/Stick-Around",
+    img: STICK,
   },
   {
-    // Add image in './styles/images.css' in #project6
     id: "project6",
-    name: "Project 6",
-    skills: ["HTML, CSS, JS"],
+    name: "Box-Office",
+    tags: ["React.js", "Styled components"],
     summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions. architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+      "React app that fethces data from TV MAZE Api about shows and actors",
+    url1: "https://thakurnitin2684.github.io/box-office/#/",
+    url2: "https://github.com/thakurnitin2684/box-office",
+    img: BOX_OFFICE,
   },
   {
-    // Add image in './styles/images.css' in #project6
-    id: "project6",
-    name: "Project 6",
-    skills: ["HTML, CSS, JS"],
-    summary:
-      "Rome is known for its stunning  architecture with the Colleseum, Pantheon, and Trevi Fountain as the main attractions.",
-    url: "https://github.com/thakurnitin2684",
+    id: "project8",
+    name: "Alarm Clock",
+    tags: ["Python", "Tkiner"],
+    summary: "Python project- Alarm Clock Made using Tkinder GUI Toolkit",
+    url1: "https://github.com/thakurnitin2684/Python-tkinter#python-tkinter",
+    url2: "https://github.com/thakurnitin2684/Python-tkinter",
+    img: ALARM,
   },
 ];
 export default MainContent;

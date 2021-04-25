@@ -19,25 +19,22 @@ const Skills = () => {
             </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>C/C++ </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#Python </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#Kotlin </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#SQL </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#NoSQL(Firestore) </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
-          </div>
-          <div className="each-skill">
-            <p>#Android </p>
+            <p>#Firebase </p>
           </div>
         </div>
       </Zoom>
@@ -48,25 +45,22 @@ const Skills = () => {
       <Zoom>
         <div className="skills">
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#React </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#HTML </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#CSS </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#Cloud computing </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
+            <p>#React-Native </p>
           </div>
           <div className="each-skill">
-            <p>#Android </p>
-          </div>
-          <div className="each-skill">
-            <p>#Android </p>
+            <p>#javascript </p>
           </div>
         </div>
       </Zoom>

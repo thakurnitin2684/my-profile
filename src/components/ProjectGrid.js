@@ -1,16 +1,15 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
-import SCREEN_TIME from "../images/screentime.png";
 
-export const ProjectGrid = ({ id, name, url, skills, summary }) => {
+export const ProjectGrid = ({ id, name, tags, summary, url1, url2, img }) => {
   return (
     <Zoom>
       <div>
         <div class="grid-item">
           <div>
-            <img class="card-img" src={SCREEN_TIME} alt="Rome" />
+            <img class="card-img" src={img} alt="p_img" />
             <div class="card-content">
-              <h1 class="card-header">Rome</h1>
+              <h1 class="card-header">{name}</h1>
               <div
                 style={{
                   display: "flex",
@@ -18,15 +17,12 @@ export const ProjectGrid = ({ id, name, url, skills, summary }) => {
                   justifyContent: "center",
                 }}
               >
-                <p className="project-tag">
-                  <span className="tag-span">Kotlin</span>
-                </p>
-                <p className="project-tag">
-                  <span className="tag-span">Kotlin</span>
-                </p>
-                <p className="project-tag">
-                  <span className="tag-span">Kotlin</span>
-                </p>
+                {tags &&
+                  tags.map((x) => (
+                    <p className="project-tag">
+                      <span className="tag-span">{x}</span>
+                    </p>
+                  ))}
               </div>
               <p class="card-text">{summary}</p>
               <div
@@ -36,10 +32,16 @@ export const ProjectGrid = ({ id, name, url, skills, summary }) => {
                   justifyContent: "space-between",
                 }}
               >
-                <button class="card-btn">
+                <button
+                  className="card-btn"
+                  onClick={() => window.open(`${url1}`, "_blank")}
+                >
                   View <span>&rarr;</span>
                 </button>
-                <button class="card-btn">
+                <button
+                  class="card-btn"
+                  onClick={() => window.open(`${url2}`, "_blank")}
+                >
                   Code <span>&lt;/&gt;</span>
                 </button>
               </div>
