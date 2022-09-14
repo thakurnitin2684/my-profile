@@ -1,17 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --primaryColor: #222831;
+  --primaryColorLight: #30475e;
+  --accentColor: #dddddd;
+  --accentColor2: #d61a3c;
+  --accentColor2Light: #d61a3c90;
+  --mattBlack: #28282b;
+  --accentColor2Light: rgba(214, 26, 60, 0.3);
+  --animCircle: #ddddddd9;
+  --animCircleLight: #dddddd1a;
+}
+* {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
 .App {
   height: 100%;
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
   overflow-y: hidden;
   position: absolute;
   font-family: "Poppins", sans-serif;
+  background-color: #dddddd;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .SidebarBig {
-  flex: 20%;
-  background-color: black;
+  flex: 8%;
+  background-color: var(--mattBlack);
 }
 .SidebarSmall {
   flex: 100%;
@@ -35,6 +56,7 @@
   overflow-x: hidden;
   position: relative;
   z-index: 10;
+  padding-bottom: 0px;
 }
 .partBg {
   position: absolute;
@@ -66,12 +88,15 @@
 }
 
 .Cfooter {
-  background: black;
+  background: var(--mattBlack);
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ftext {
-  color: white;
-  margin: 0px;
-  transform: translateY(50%);
+  color: var(--accentColor);
+  font-size: large;
+  font-weight: 900;
 }

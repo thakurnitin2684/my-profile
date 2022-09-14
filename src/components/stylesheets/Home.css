@@ -1,0 +1,217 @@
+.homeContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--mattBlack);
+  align-items: center;
+  justify-content: center;
+}
+
+.ImgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.innerContent {
+  z-index: 10;
+}
+
+.profile-img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  max-width: 300px;
+}
+
+.labelContainer {
+  user-select: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 1px 0 var(--mattBlack);
+  letter-spacing: 1px;
+  color: var(--mattBlack);
+  margin: 0px;
+}
+.subTitle {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: var(--mattBlack);
+  margin: 0px;
+}
+.seText {
+  color: var(--accentColor2);
+}
+
+.btnImg {
+  width: 40px;
+  height: 40px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.anim-circle {
+  /* Add the blur effect */
+  filter: blur(40px);
+  -webkit-filter: blur(40px);
+
+  /* overflow: hidden; */
+  color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 100%;
+  background: var(--animCircle);
+  animation: breathe 10s linear infinite;
+}
+
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 15px var(--animCircleLight),
+      0 0 0 30px var(--animCircleLight), 0 0 0 45px var(--animCircleLight),
+      0 0 0 60px var(--animCircleLight), 0 0 0 75px var(--animCircleLight),
+      0 0 0 80px var(--animCircleLight), 0 0 0 85px var(--animCircleLight);
+  }
+  50% {
+    box-shadow: 0 0 0 25px var(--animCircleLight),
+      0 0 0 50px var(--animCircleLight), 0 0 0 75px var(--animCircleLight),
+      0 0 0 100px var(--animCircleLight), 0 0 0 125px var(--animCircleLight),
+      0 0 0 135px var(--animCircleLight), 0 0 0 145px var(--animCircleLight),
+      0 0 0 155px var(--animCircleLight), 0 0 0 195px var(--animCircleLight);
+  }
+  100% {
+    box-shadow: 0 0 0 15px var(--animCircleLight),
+      0 0 0 30px var(--animCircleLight), 0 0 0 45px var(--animCircleLight),
+      0 0 0 60px var(--animCircleLight), 0 0 0 75px var(--animCircleLight),
+      0 0 0 80px var(--animCircleLight), 0 0 0 85px var(--animCircleLight);
+  }
+}
+
+.btn {
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(218, 218, 218);
+  border-radius: 15px;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: inset 2px 2px 5px -2px rgba(4, 57, 107, 0.7);
+  transform: scale(0.95);
+}
+
+.lowerBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnLong {
+  border-radius: 25px;
+  height: 20px;
+  width: 40%;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accentColor2);
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -4px -4px 10px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.btnLong:active {
+  box-shadow: inset 2px 2px 5px -2px rgba(4, 57, 107, 0.7);
+  transform: scale(0.95);
+}
+
+.btnTxt {
+  user-select: none;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: var(--accentColor);
+}
+
+.scrollText {
+  user-select: none;
+  font-size: 0.8em;
+  /* font-weight: bold; */
+  color: var(--accentColor2);
+}
+.scroll-downs {
+  position: absolute;
+  bottom: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* width: 34px; */
+  /* height: 55px; */
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 25px;
+  border: 2px solid var(--accentColor2);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--accentColor2);
+  animation-name: scroll;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import SidebarBig from "./components/SidebarBig";
 import TopBar from "./components/TopBar";
@@ -6,7 +7,7 @@ import ParticleConfig from "./config/particle-config";
 import MainContent from "./components/MainContent";
 import Fade from "react-reveal/Fade";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <Fade left>
@@ -18,26 +19,28 @@ const App = () => {
         <TopBar />
       </div>
       <div className="MainContentOuter">
-        <div className="partBg">
+        {/* <div className="partBg">
           <Particles
             height="100%"
             width="100%"
             params={ParticleConfig}
           ></Particles>
-        </div>
+        </div> */}
         <div className="MainContentInner">
           <MainContent />
-          <Fade bottom>
-            <div className="Cfooter">
-              <p className="ftext">
-                Made by Nitin Thakur <span>&#169;</span>
-              </p>
-            </div>
-          </Fade>
+          <div>
+            <Fade bottom>
+              <div className="Cfooter">
+                <p className="ftext">
+                  Made by Nitin Thakur <span>&#169;</span>
+                </p>
+              </div>
+            </Fade>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default App;

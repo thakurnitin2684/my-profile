@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./stylesheets/ProjectGrid.css";
+import useWindowDimensions from "../utils/UseWindowDimensions.js";
+import * as assets from "../assets";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import Zoom from "react-reveal/Zoom";
 
-export const ProjectGrid = ({ id, name, tags, summary, url1, url2, img }) => {
+export function ProjectGrid({ id, name, tags, summary, url1, url2, img }) {
   return (
     <Zoom>
       <div>
-        <div class="grid-item">
+        <div className="grid-item">
           <div>
-            <img class="card-img" src={img} alt="p_img" />
-            <div class="card-content">
-              <h1 class="card-header">{name}</h1>
+            <img className="card-img" src={img} alt="p_img" />
+            <div className="card-content">
+              <h1 className="card-header">{name}</h1>
               <div
                 style={{
                   display: "flex",
@@ -24,12 +29,16 @@ export const ProjectGrid = ({ id, name, tags, summary, url1, url2, img }) => {
                     </p>
                   ))}
               </div>
-              <p class="card-text">{summary}</p>
+              <p className="card-text">{summary}</p>
               <div
                 style={{
+                  width: "90%",
+                  position: "absolute",
+                  bottom: 15,
                   display: "flex",
                   flexDirection: "row",
                   justifyContent: "space-between",
+                  alignItem: "flex-end",
                 }}
               >
                 <button
@@ -51,4 +60,242 @@ export const ProjectGrid = ({ id, name, tags, summary, url1, url2, img }) => {
       </div>
     </Zoom>
   );
-};
+}
+
+export function BasicProjectGrid({ id, name, tags, summary, url1, url2, img }) {
+  return (
+    <Zoom>
+      <div>
+        <div className="basic-item">
+          <div>
+            <img className="basiccard-img" src={img} alt="p_img" />
+            <div className="basiccard-content">
+              <h1 className="basiccard-header">{name}</h1>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                }}
+              >
+                {tags &&
+                  tags.map((x) => (
+                    <p className="basicproject-tag">
+                      <span className="basictag-span">{x}</span>
+                    </p>
+                  ))}
+              </div>
+              <p className="basiccard-text">{summary}</p>
+              <div
+                style={{
+                  width: "90%",
+                  position: "absolute",
+                  bottom: 15,
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItem: "flex-end",
+                }}
+              >
+                <button
+                  className="basiccard-btn"
+                  onClick={() => window.open(`${url1}`, "_blank")}
+                >
+                  View <span>&rarr;</span>
+                </button>
+                <button
+                  class="basiccard-btn"
+                  onClick={() => window.open(`${url2}`, "_blank")}
+                >
+                  Code <span>&lt;/&gt;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Zoom>
+  );
+}
+export function AndroidProjectGrid({
+  id,
+  name,
+  tags,
+  summary,
+  url1,
+  url2,
+  img,
+  ss,
+  Overview,
+}) {
+  const [isVisible, setVisible] = useState(false);
+
+  const { height, width } = useWindowDimensions();
+  const [isBtnViewVisible, setBtnViewVisible] = useState(width < 1000);
+
+  useEffect(() => {
+    if (width < 1000) {
+      setBtnViewVisible(true);
+    } else {
+      setBtnViewVisible(false);
+    }
+  }, [width]);
+
+  function onEnter() {
+    setVisible(true);
+  }
+  function onExit() {
+    setVisible(false);
+  }
+
+  return (
+    <Zoom>
+      <div>
+        <div
+          className="android-item"
+          onMouseEnter={onEnter}
+          onMouseLeave={onExit}
+          style={
+            isVisible && !isBtnViewVisible
+              ? {
+                  height: 400,
+                  width: 400,
+                }
+              : null
+          }
+        >
+          {!(!isBtnViewVisible && isVisible) ? (
+            <>
+              <div className="androidTopContainer">
+                <img class="androidCard-img" src={img} alt="p_img" />
+                <h1 className="androidCard-header">{name}</h1>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  marginTop: 10,
+                }}
+              >
+                {tags &&
+                  tags.map((x) => (
+                    <p className="aproject-tag">
+                      <span className="atag-span">{x}</span>
+                    </p>
+                  ))}
+              </div>
+              <p className="androidCard-text">{summary}</p>
+
+              {isBtnViewVisible && (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <button
+                    className="androidCard-btn"
+                    onClick={() => window.open(`${url1}`, "_blank")}
+                  >
+                    View <span>&rarr;</span>
+                  </button>
+                  <button
+                    class="androidCard-btn"
+                    onClick={() => window.open(`${url2}`, "_blank")}
+                  >
+                    Code <span>&lt;/&gt;</span>
+                  </button>
+                </div>
+              )}
+            </>
+          ) : (
+            <div>
+              <div className="androidTopContainer">
+                <img className="androidCard-img" src={img} alt="p_img" />
+                <div className="androidTopTextContainer">
+                  <h1 className="androidCard-header">{name}</h1>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "center",
+                      marginTop: 10,
+                      marginLeft: 10,
+                    }}
+                  >
+                    {tags &&
+                      tags.map((x) => (
+                        <p className="aproject-tag">
+                          <span className="atag-span">{x}</span>
+                        </p>
+                      ))}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    alignItem: "flex-end",
+                    padding: 10,
+                    width: "35%",
+                    maxWidth: "35%",
+                  }}
+                >
+                  <button
+                    className="androidCard-btn"
+                    style={{
+                      width: "90%",
+                      height: 30,
+                      alignSelf: "flex-end",
+                    }}
+                    onClick={() => window.open(`${url1}`, "_blank")}
+                  >
+                    View <span>&rarr;</span>
+                  </button>
+                  <button
+                    class="androidCard-btn"
+                    style={{
+                      width: "90%",
+                      height: 30,
+                      alignSelf: "flex-end",
+                      marginTop: 10,
+                    }}
+                    onClick={() => window.open(`${url2}`, "_blank")}
+                  >
+                    Code <span>&lt;/&gt;</span>
+                  </button>
+                </div>
+              </div>
+              <div className="androidBottomContainer">
+                <div className="androidBottomLeft">
+                  <Carousel
+                    showThumbs={false}
+                    autoPlay={true}
+                    showIndicators={false}
+                  >
+                    {ss.map((item) => (
+                      <div>
+                        <img className="ssImg" src={item} alt="p_img" />
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+                <div className="androidBottomRight">
+                  <p className="overViewHead">{assets.strings.txt_overview}</p>
+                  <div>
+                    {Overview.map((item) => (
+                      <p className="overViewText">{item}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </Zoom>
+  );
+}

@@ -1,8 +1,8 @@
-import React from "react";
-import "./TopBar.css";
+import React, { useState } from "react";
+import "./stylesheets/TopBar.css";
 import Fade from "react-reveal/Fade";
 
-const TopBar = () => {
+function TopBar() {
   return (
     <Fade top>
       <div className="MainBox">
@@ -13,6 +13,6 @@ const TopBar = () => {
       </div>
     </Fade>
   );
-};
+}
 
 export default TopBar;

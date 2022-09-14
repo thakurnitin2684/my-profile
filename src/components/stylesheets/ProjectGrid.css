@@ -1,0 +1,441 @@
+.grid-item {
+  background-color: #ebeaea;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+  transition: 0.2s;
+  width: 300px;
+  height: 320px;
+  padding: 10px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: translateY(-1.5%);
+  box-shadow: 18px 18px 20px rgba(4, 57, 107, 0.3),
+    -8px -8px 10px rgba(255, 255, 255, 0.9);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--mattBlack);
+  margin: 2px;
+}
+
+.tag-span {
+  border: 2px var(--accentColor2) solid;
+  border-radius: 8px;
+  background: var(--accentColor2);
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.card-text {
+  font-size: 15px;
+  color: var(--mattBlack);
+  margin-bottom: 3px;
+}
+
+.project-tag {
+  color: var(--accentColor);
+  margin: 1px;
+  font-size: 12px;
+}
+
+.card-btn {
+  display: block;
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  color: var(--mattBlack);
+  background-color: var(--accentColor);
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.card-btn span {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: var(--accentColor2Light);
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .ImgDiv {
+    flex: 1;
+  }
+  .Title {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+  }
+  .profile-img {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 310px;
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .grid-item {
+    width: 300px;
+  }
+}
+
+/* Android Grid system */
+.android-item {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: 1s;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.androidGrid:hover .android-item {
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.androidGrid .android-item:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.androidTopContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 100%; */
+}
+.androidBottomContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 10px;
+  /* height: 300px; */
+}
+.overViewText {
+  color: var(--accentColor);
+  line-height: 8px;
+  font-size: 12px;
+}
+.overViewHead {
+  color: var(--accentColor2);
+  line-height: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ssImg {
+  height: 95%;
+}
+.androidBottomLeft {
+  width: 50%;
+  /* padding: 10px; */
+  margin-right: 10px;
+  /* height: 50%; */
+  overflow: hidden;
+}
+.androidBottomRight {
+  width: 50%;
+  height: 300px;
+  overflow: auto;
+}
+
+.androidTopTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.androidCard-img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.androidCard-header {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accentColor);
+  margin: 2px;
+  margin-left: 5px;
+}
+
+.atag-span {
+  border: 2px var(--accentColor2) solid;
+  border-radius: 8px;
+  background: var(--accentColor2);
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.androidCard-text {
+  font-size: 15px;
+  /* text-align: justify; */
+  color: var(--accentColor);
+  margin-bottom: 3px;
+}
+
+.aproject-tag {
+  color: var(--accentColor);
+  margin: 1px;
+  font-size: 12px;
+}
+
+.androidCard-btn {
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--accentColor);
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.androidCard-btn span {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+.androidCard-btn:hover,
+.androidCard-btn:active {
+  background-color: var(--accentColor2);
+}
+
+.androidCard-btn:hover span,
+.androidCard-btn:active span {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+
+  /* .androidGrid:hover .android-item {
+    pointer-events: none;
+  }
+  .androidGrid .android-item:hover {
+    pointer-events: none;
+  } */
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .ImgDiv {
+    flex: 1;
+  }
+  .Title {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+  }
+  .profile-img {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .androidGrid {
+    grid-template-columns: 310px;
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .android-item {
+    width: 300px;
+  }
+}
+
+/* Basic Projects grid */
+
+.basic-item {
+  background-color: #ebeaea;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+  transition: 0.2s;
+  width: 250px;
+  height: 300px;
+  padding: 10px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(4, 57, 107, 0.3),
+    -3px -3px 8px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.basic-item:hover {
+  /* transform: translateY(-1.5%); */
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+
+.basiccard-img {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  border-radius: 15px;
+}
+
+.basiccard-content {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basiccard-header {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--mattBlack);
+  margin: 2px;
+}
+
+.basictag-span {
+  border: 2px var(--accentColor2) solid;
+  border-radius: 8px;
+  background: var(--accentColor2);
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.basiccard-text {
+  /* overflow-y: scroll; */
+  font-size: 13px;
+  color: var(--mattBlack);
+  margin-bottom: 3px;
+}
+
+.basicproject-tag {
+  color: var(--accentColor);
+  margin: 1px;
+  font-size: 12px;
+}
+
+.basiccard-btn {
+  display: block;
+  width: 49%;
+  height: 30px;
+  padding: 3px;
+  font-size: 15px;
+  text-align: center;
+  color: var(--mattBlack);
+  background-color: var(--accentColor);
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.basiccard-btn span {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+.basiccard-btn:hover,
+.basiccard-btn:active {
+  background-color: var(--accentColor2Light);
+}
+
+.basiccard-btn:hover span,
+.basiccard-btn:active span {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  img {
+    width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .basicImgDiv {
+    flex: 1;
+  }
+  .basicTitle {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+  }
+  .basicprofile-img {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .basicGrid {
+    grid-template-columns: auto auto;
+
+    /* grid-template-columns: 310px;
+    grid-gap: 30px;
+    padding: 10px; */
+  }
+  .basicgrid-item {
+    width: 300px;
+  }
+}

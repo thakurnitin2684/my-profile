@@ -1,0 +1,35 @@
+.MainBox {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  height: 90%;
+}
+
+a {
+  color: var(--accentColor);
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 1000ms;
+}
+
+li {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  color: var(--accentColor2);
+}
+
+a:hover {
+  color: var(--accentColor2);
+}

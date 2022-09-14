@@ -1,3 +1,11 @@
+.contactInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60vw;
+}
+
 .contact-box {
   width: 80%;
   margin: auto;

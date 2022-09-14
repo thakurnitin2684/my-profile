@@ -1,0 +1,97 @@
+.experienceInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60vw;
+}
+.expBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionHeading {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--mattBlack);
+  text-shadow: 1px 0 var(--mattBlack);
+  letter-spacing: 1px;
+  /* align-self: flex-start; */
+}
+
+.myBio {
+  align-self: flex-start;
+  color: var(--mattBlack);
+  font-weight: 500;
+  text-align: justify;
+}
+
+.expContainerLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ebeaea;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+
+.expContainerRight {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ebeaea;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+
+.eachExpContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.eachExp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.expDurationTxt {
+  font-size: 12px;
+  color: grey;
+  margin: 0px;
+}
+
+.expTitleTxt {
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--accentColor2);
+  font-weight: 900;
+}
+
+.expDescripTxt {
+  margin: 0px;
+  font-size: 13px;
+  color: var(--mattBlack);
+}
+
+.expIcon {
+  margin-top: 10px;
+}
+.verticalLine {
+  width: 50%;
+  border-right: 2px solid var(--mattBlack);
+  height: 100px;
+}

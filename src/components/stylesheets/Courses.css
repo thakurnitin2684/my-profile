@@ -1,0 +1,92 @@
+.coursesInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60vw;
+}
+
+.courseGrid {
+  font-family: "Poppins", sans-serif;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  grid-gap: 50px;
+  width: 60vw;
+}
+
+.courseCard {
+  background-color: #ebeaea;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 300px;
+  height: 220px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3);
+  cursor: pointer;
+}
+
+.courseCard:hover {
+  /* transform: translateY(-1.5%); */
+  /* opacity: 0.3; */
+  /* color: rgba(0, 0, 0, 0.6); */
+  /* opacity: 0.3; */
+}
+
+.courseImg {
+  border-radius: 15px;
+  width: 300px;
+  height: 220px;
+  position: absolute;
+}
+.courseCardContent {
+  background-color: #d61a3cd9;
+  position: absolute;
+  border-radius: 15px;
+  width: 300px;
+  height: 220px;
+}
+.courseCardTitle {
+  padding: 5px;
+  font-size: 18px;
+  color: var(--accentColor);
+  font-weight: 900;
+  margin: 0px;
+  margin-left: 10px;
+}
+.courseCardCompany {
+  font-size: 16px;
+  color: var(--mattBlack);
+  font-weight: 900;
+  margin: 0px;
+  margin-left: 15px;
+}
+.courseIconContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+.courseIconInnerContainer {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--accentColor);
+  padding: 0px;
+  margin-right: 20px;
+}
+.courseIcon {
+  margin-right: 8px;
+  margin-top: 3px;
+  margin-left: 8px;
+  color: var(--accentColor2);
+}

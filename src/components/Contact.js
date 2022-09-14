@@ -1,66 +1,74 @@
-import React from "react";
-import "./Contact.css";
-import GMAIL from "../images/gmail.png";
-import CALL from "../images/call.png";
-import WHATSAPP from "../images/whatsapp.png";
-import LINKEDIN from "../images/linkedIn.png";
-import GITHUB from "../images/github.png";
-import Zoom from "react-reveal/Zoom";
+import React, { useState } from "react";
+import "./stylesheets/Contact.css";
 
-const Contact = () => {
+import Zoom from "react-reveal/Zoom";
+import * as assets from "../assets";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+function Contact() {
+  const handleButtonClick = (url) => {
+    var win = window.open(url, "_blank");
+    win.focus();
+  };
   return (
     <Zoom>
-      <div>
-        <h2 id="contact" className="text-anim" style={{ paddingTop: "120px" }}>
-          Contact Details
+      <div className="contactInnerContainer">
+        <ToastContainer
+          position="bottom-right"
+          autoClose={2000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+        <h2 id="contact" className="sectionHeading">
+          {assets.strings.txt_get_in_touch}
         </h2>
         <div className="contact-box">
-          <Zoom>
-            <div className="contact-item">
-              <img class="contact-img" src={LINKEDIN} alt="mail" />
-              <a
-                className="contact-text2"
-                href="https://www.linkedin.com/in/nitin-thakur-21b85217a/"
-              >
-                thakurnitin2684
-              </a>{" "}
+          <div className="linkContainer">
+            <div
+              className="btn"
+              onClick={() =>
+                handleButtonClick("mailto: thakurnitin2684@gmail.com")
+              }
+            >
+              <img className="btnImg" src={assets.images.gmail} />
             </div>
-          </Zoom>
-          <Zoom>
-            <div className="contact-item">
-              <img class="contact-img" src={GITHUB} alt="mail" />
-              <a
-                className="contact-text2"
-                href="https://github.com/thakurnitin2684"
-              >
-                thakurnitin2684
-              </a>{" "}
+            <div
+              className="btn"
+              onClick={() => handleButtonClick(assets.url.linkedIn)}
+            >
+              <img className="btnImg" src={assets.images.linkedIn} />
             </div>
-          </Zoom>
-          <Zoom>
-            <div className="contact-item">
-              <img class="contact-img" src={GMAIL} alt="mail" />
-              <a className="contact-text2" href="mailto: thakurnitin2684.com">
-                thakurnitin2684@gmail.com
-              </a>
+
+            <div
+              className="btn"
+              onClick={() => {
+                navigator.clipboard.writeText("+917807807445");
+                toast.success("Copied to clipboard !");
+              }}
+            >
+              <img className="btnImg" src={assets.images.call} />
             </div>
-          </Zoom>
-          <Zoom>
-            <div className="contact-item">
-              <img class="contact-img" src={CALL} alt="mail" />
-              <p className="contact-text">+91-7807807445</p>
+            <div
+              className="btn"
+              onClick={() => {
+                navigator.clipboard.writeText("+917807807445");
+                toast.success("Copied to clipboard !");
+              }}
+            >
+              <img className="btnImg" src={assets.images.whatsapp} />
             </div>
-          </Zoom>
-          <Zoom>
-            <div className="contact-item">
-              <img class="contact-img" src={WHATSAPP} alt="mail" />
-              <p className="contact-text">+91-7807807445</p>
-            </div>
-          </Zoom>
+          </div>
         </div>
       </div>
     </Zoom>
   );
-};
+}
 
 export default Contact;

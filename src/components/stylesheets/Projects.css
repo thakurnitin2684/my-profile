@@ -1,0 +1,57 @@
+.projectInnerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60vw;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--mattBlack);
+  text-shadow: 1px 0 var(--mattBlack);
+  letter-spacing: 1px;
+}
+
+.grid {
+  font-family: "Poppins", sans-serif;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  grid-gap: 50px;
+  width: 60vw;
+}
+.androidGrid {
+  font-family: "Poppins", sans-serif;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 60vw;
+  grid-gap: 50px;
+}
+.basicGrid {
+  font-family: "Poppins", sans-serif;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 60vw;
+  grid-gap: 20px;
+}
