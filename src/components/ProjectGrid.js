@@ -5,6 +5,7 @@ import * as assets from "../assets";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 export function ProjectGrid({ id, name, tags, summary, url1, url2, img }) {
   return (
@@ -149,7 +150,7 @@ export function AndroidProjectGrid({
   }
 
   return (
-    <Zoom>
+    <Fade duration={500}>
       <div>
         <div
           className="android-item"
@@ -296,6 +297,6 @@ export function AndroidProjectGrid({
           )}
         </div>
       </div>
-    </Zoom>
+    </Fade>
   );
 }

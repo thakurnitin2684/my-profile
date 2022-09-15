@@ -19,6 +19,24 @@
   width: 60vw;
 }
 
+@media only screen and (max-width: 1300px) {
+  .courseGrid {
+    grid-gap: 13px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .courseGrid {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .courseGrid {
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+}
+
 .courseCard {
   background-color: #ebeaea;
   border-radius: 0.4rem;
@@ -32,13 +50,6 @@
   overflow: hidden;
   box-shadow: 8px 8px 10px rgba(4, 57, 107, 0.3);
   cursor: pointer;
-}
-
-.courseCard:hover {
-  /* transform: translateY(-1.5%); */
-  /* opacity: 0.3; */
-  /* color: rgba(0, 0, 0, 0.6); */
-  /* opacity: 0.3; */
 }
 
 .courseImg {

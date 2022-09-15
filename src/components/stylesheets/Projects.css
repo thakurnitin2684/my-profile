@@ -6,19 +6,6 @@
   width: 60vw;
 }
 
-.sectionHeading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  font-size: 2.5em;
-  font-weight: bold;
-  color: var(--mattBlack);
-  text-shadow: 1px 0 var(--mattBlack);
-  letter-spacing: 1px;
-}
-
 .grid {
   font-family: "Poppins", sans-serif;
 
@@ -27,8 +14,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
-  grid-gap: 50px;
+  padding: 8px;
+  grid-gap: 40px;
   width: 60vw;
 }
 .androidGrid {
@@ -54,4 +41,45 @@
   padding: 10px;
   width: 60vw;
   grid-gap: 20px;
+}
+
+@media (max-width: 1224px) {
+  .androidGrid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 700px) {
+  .androidGrid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 1270px) {
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: auto;
+    padding: 5px;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 1300px) {
+  .basicGrid {
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .basicGrid {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 600px) {
+  .basicGrid {
+    grid-template-columns: auto;
+  }
 }

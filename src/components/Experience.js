@@ -11,7 +11,7 @@ import { experienceData1, experienceData2 } from "../utils/DataFile";
 function Experience() {
   return (
     <div className="experienceInnerContainer">
-      <h2 id="about" className="sectionHeading">
+      <h2 id="experience" className="sectionHeading">
         {assets.strings.txt_experience}
       </h2>
       <div className="expBoxContainer">
@@ -20,7 +20,7 @@ function Experience() {
             {experienceData1.map((x) => (
               <div className="eachExpContainer">
                 <div>
-                  <SchoolOutlinedIcon className="expIcon" />
+                  <WorkOutlineOutlinedIcon className="expIcon" />
                   <div class="verticalLine" />
                 </div>
                 <div className="eachExp">

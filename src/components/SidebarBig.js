@@ -9,6 +9,8 @@ import ContactsIcon from "@mui/icons-material/Contacts";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import LayersIcon from "@mui/icons-material/Layers";
 import SchoolIcon from "@mui/icons-material/School";
+import HomeIcon from "@mui/icons-material/Home";
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 
 function SidebarBig() {
   const [currentLink, setCurrentLink] = useState(0);
@@ -18,15 +20,25 @@ function SidebarBig() {
   }
 
   return (
-    <Fade left>
-      <div className="MainBox">
+    <div className="MainBox">
+      <Fade left>
         <ul>
+          <li>
+            <HomeIcon className="icon" fontSize="small" />
+            <a
+              href="#home"
+              style={currentLink == 0 ? { color: "#D61A3C" } : null}
+              onClick={() => onItemClick(0)}
+            >
+              Home
+            </a>
+          </li>
           <li>
             <PersonIcon className="icon" fontSize="small" />
             <a
               href="#about"
-              style={currentLink == 0 ? { color: "#D61A3C" } : null}
-              onClick={() => onItemClick(0)}
+              style={currentLink == 1 ? { color: "#D61A3C" } : null}
+              onClick={() => onItemClick(1)}
             >
               About
             </a>
@@ -35,45 +47,45 @@ function SidebarBig() {
             <LayersIcon className="icon" fontSize="small" />
             <a
               href="#projects"
-              style={currentLink == 1 ? { color: "#D61A3C" } : null}
-              onClick={() => onItemClick(1)}
+              style={currentLink == 2 ? { color: "#D61A3C" } : null}
+              onClick={() => onItemClick(2)}
             >
               Projects
             </a>
           </li>
           <li>
-            <SchoolIcon className="icon" fontSize="small" />
+            <WorkOutlineOutlinedIcon className="icon" fontSize="small" />
             <a
-              href="#skills"
-              style={currentLink == 2 ? { color: "#D61A3C" } : null}
-              onClick={() => onItemClick(2)}
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <SettingsSuggestIcon className="icon" fontSize="small" />
-            <a
-              href="#skills"
+              href="#experience"
               style={currentLink == 3 ? { color: "#D61A3C" } : null}
               onClick={() => onItemClick(3)}
             >
-              Education
+              Experience
+            </a>
+          </li>
+          <li>
+            <SchoolIcon className="icon" fontSize="small" />
+            <a
+              href="#courses"
+              style={currentLink == 4 ? { color: "#D61A3C" } : null}
+              onClick={() => onItemClick(4)}
+            >
+              Courses
             </a>
           </li>
           <li>
             <ContactsIcon className="icon" fontSize="small" />
             <a
               href="#contact"
-              style={currentLink == 4 ? { color: "#D61A3C" } : null}
-              onClick={() => onItemClick(4)}
+              style={currentLink == 5 ? { color: "#D61A3C" } : null}
+              onClick={() => onItemClick(5)}
             >
               Contact
             </a>
           </li>
         </ul>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   );
 }
 

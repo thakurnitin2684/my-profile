@@ -12,13 +12,13 @@ function Home() {
   };
 
   return (
-    <div className="homeContainer">
+    <div id="home" className="homeContainer">
       <div className="wrapper">
         <div className="anim-circle">diaphragmatic animation</div>
 
         <div className="innerContent">
           <div className="ImgDiv">
-            <Fade top>
+            <Fade>
               <img
                 className="profile-img"
                 src={assets.images.profile}
@@ -37,52 +37,58 @@ function Home() {
           </div>
 
           <div className="linkContainer">
-            <div
-              className="btn"
-              onClick={() => handleButtonClick(assets.url.github)}
-            >
-              <img className="btnImg" src={assets.images.github} />
-            </div>
-
-            <div
-              className="btn"
-              onClick={() => handleButtonClick(assets.url.linkedIn)}
-            >
-              <img className="btnImg" src={assets.images.linkedIn} />
-            </div>
-
-            <div
-              className="btn"
-              onClick={() => handleButtonClick(assets.url.play_store)}
-            >
-              <img className="btnImg" src={assets.images.google_play} />
-            </div>
-
-            <div
-              className="btn"
-              onClick={() => handleButtonClick(assets.url.gfg)}
-            >
-              <img
-                className="btnImg"
-                src={assets.images.gfg}
-                style={{ height: 30, paddingTop: 5, paddingBottom: 5 }}
-              />
-            </div>
+            <Fade duration={7000}>
+              <div
+                className="btn"
+                onClick={() => handleButtonClick(assets.url.github)}
+              >
+                <img className="btnImg" src={assets.images.github} />
+              </div>
+            </Fade>
+            <Fade duration={7000}>
+              <div
+                className="btn"
+                onClick={() => handleButtonClick(assets.url.linkedIn)}
+              >
+                <img className="btnImg" src={assets.images.linkedIn} />
+              </div>
+            </Fade>
+            <Fade duration={7000}>
+              <div
+                className="btn"
+                onClick={() => handleButtonClick(assets.url.play_store)}
+              >
+                <img className="btnImg" src={assets.images.google_play} />
+              </div>
+            </Fade>
+            <Fade duration={7000}>
+              <div
+                className="btn"
+                onClick={() => handleButtonClick(assets.url.gfg)}
+              >
+                <img
+                  className="btnImg"
+                  src={assets.images.gfg}
+                  style={{ height: 30, paddingTop: 5, paddingBottom: 5 }}
+                />
+              </div>
+            </Fade>
           </div>
 
           <div className="lowerBtnContainer">
-            <div
-              className="btnLong"
-              // onClick={() => handleButtonClick(assets.url.play_store)}
-            >
-              <p className="btnTxt">{assets.strings.txt_contact_me}</p>
-            </div>
-            <div
-              className="btnLong"
-              // onClick={() => handleButtonClick(assets.url.play_store)}
-            >
-              <p className="btnTxt">{assets.strings.txt_download_dv}</p>
-            </div>
+            <Fade duration={3000}>
+              <a href="#contact" className="btnLong">
+                <p className="btnTxt">{assets.strings.txt_contact_me}</p>
+              </a>
+            </Fade>
+            <Fade duration={3000}>
+              <div
+                className="btnLong"
+                onClick={() => handleButtonClick(assets.url.cv)}
+              >
+                <p className="btnTxt">{assets.strings.txt_download_dv}</p>
+              </div>
+            </Fade>
           </div>
         </div>
 

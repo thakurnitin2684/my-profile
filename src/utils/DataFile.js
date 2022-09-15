@@ -74,15 +74,25 @@ const androidProjects = [
 const projects1 = [
   {
     id: "1",
-    name: "TIC TAC TOE",
-    tags: ["React.js", "Javascript", "SCSS"],
-    summary: "Tic tac toe game made with react.js",
-    url1: "http://thakurnitin2684ttt.surge.sh/",
-    url2: "https://github.com/thakurnitin2684/tictactoe",
-    img: assets.images.ttt,
+    name: "Notes app",
+    tags: ["REACT"],
+    summary: "A note taking app made with react",
+    url1: "https://thakurnitin2684.github.io/react-notes/",
+    url2: "https://github.com/thakurnitin2684/react-notes",
+    img: assets.images.notes,
   },
   {
     id: "2",
+    name: "React-native Navigation",
+    tags: ["Navigation", "redux", "context-api"],
+    summary:
+      "React-Native app to understand navigation. Demonstrates stack, drawer,bottom,nested navigation.",
+    url1: "https://github.com/thakurnitin2684/RN-Navigation#rn-navigation",
+    url2: "https://github.com/thakurnitin2684/RN-Navigation",
+    img: assets.images.rn_nav,
+  },
+  {
+    id: "3",
     name: "To-DO List",
     tags: ["express", "mongoose", "ejs"],
     summary:
@@ -92,7 +102,17 @@ const projects1 = [
     img: assets.images.todo,
   },
   {
-    id: "3",
+    id: "4",
+    name: "TIC TAC TOE",
+    tags: ["React.js", "Javascript", "SCSS"],
+    summary: "Tic tac toe game made with react.js",
+    url1: "http://thakurnitin2684ttt.surge.sh/",
+    url2: "https://github.com/thakurnitin2684/tictactoe",
+    img: assets.images.ttt,
+  },
+
+  {
+    id: "5",
     name: "To-DO List REACT",
     tags: ["REACT"],
     summary: "A static to-do list app made with react",
@@ -102,16 +122,7 @@ const projects1 = [
   },
 
   {
-    id: "4",
-    name: "Notes app",
-    tags: ["REACT"],
-    summary: "A note taking app made with react",
-    url1: "https://thakurnitin2684.github.io/react-notes/",
-    url2: "https://github.com/thakurnitin2684/react-notes",
-    img: assets.images.notes,
-  },
-  {
-    id: "4",
+    id: "6",
     name: "Box-Office",
     tags: ["React.js", "Styled components"],
     summary:
@@ -121,7 +132,7 @@ const projects1 = [
     img: assets.images.boxoffice,
   },
   {
-    id: "5",
+    id: "7",
     name: "Guess My Number",
     tags: ["React Native", "Expo"],
     summary: "React Native game app of guessing numbers.",
@@ -129,30 +140,11 @@ const projects1 = [
     url2: "https://github.com/thakurnitin2684/GuessMyNumber",
     img: assets.images.gnm,
   },
-  {
-    id: "6",
-    name: "React-native Navigation",
-    tags: ["Navigation", "redux", "context-api"],
-    summary:
-      "React-Native app to understand navigation. Demonstrates stack, drawer,bottom,nested navigation.",
-    url1: "https://github.com/thakurnitin2684/RN-Navigation#rn-navigation",
-    url2: "https://github.com/thakurnitin2684/RN-Navigation",
-    img: assets.images.rn_nav,
-  },
 ];
 
 const projects2 = [
   {
     id: "1",
-    name: "Dice",
-    tags: ["Html", "CSS", "Javascript"],
-    summary: "Basic web development project. A dice game.",
-    url1: "https://thakurnitin2684.github.io/Dice/",
-    url2: "https://github.com/thakurnitin2684/Dice",
-    img: assets.images.dice,
-  },
-  {
-    id: "2",
     name: "Drum kit",
     tags: ["Html", "css", "JS", "Dom-Manipulation"],
     summary: "A drum kit that takes input from keyboard, mouse",
@@ -161,7 +153,7 @@ const projects2 = [
     img: assets.images.drum_kit,
   },
   {
-    id: "3",
+    id: "2",
     name: "News-Letter",
     tags: ["nodejs", "express", "js"],
     summary: "Newsletter web app using mailchimp api. Hosted on heroku.",
@@ -170,13 +162,22 @@ const projects2 = [
     img: assets.images.newsletter,
   },
   {
-    id: "4",
+    id: "3",
     name: "Registration Form",
     tags: ["React", "Hooks"],
     summary: "React form to understand hooks.",
     url1: "https://thakurnitin2684.github.io/react-registration-form/",
     url2: "https://github.com/thakurnitin2684/react-registration-form",
     img: assets.images.registration,
+  },
+  {
+    id: "4",
+    name: "Dice",
+    tags: ["Html", "CSS", "Javascript"],
+    summary: "Basic web development project. A dice game.",
+    url1: "https://thakurnitin2684.github.io/Dice/",
+    url2: "https://github.com/thakurnitin2684/Dice",
+    img: assets.images.dice,
   },
   {
     id: "5",
@@ -188,35 +189,7 @@ const projects2 = [
     img: assets.images.clock,
   },
   {
-    id: "3",
-    name: "Stick-Around",
-    tags: ["Unity", "C#", "Game"],
-    summary: "Minimal Game made with Unity Game development engine.",
-    url1: "https://play.google.com/store/apps/details?id=com.thakurnitin.StickAround&hl=en",
-    url2: "https://github.com/thakurnitin2684/Stick-Around",
-    img: assets.images.stick,
-  },
-  {
-    id: "project7",
-    name: "Naksha Home Decor",
-    tags: ["Html", "CSS"],
-    summary:
-      "WebDevelopment Project. Static Business Website for Home Decor selling shop.",
-    url1: "https://thakurnitin2684.github.io/nakshahomedecor/",
-    url2: "https://github.com/thakurnitin2684/nakshahomedecor",
-    img: assets.images.naksha,
-  },
-  {
-    id: "5",
-    name: "Alarm Clock",
-    tags: ["Python", "Tkiner"],
-    summary: "Python project- Alarm Clock Made using Tkinder GUI Toolkit",
-    url1: "https://github.com/thakurnitin2684/Python-tkinter#python-tkinter",
-    url2: "https://github.com/thakurnitin2684/Python-tkinter",
-    img: assets.images.alarm,
-  },
-  {
-    id: "5",
+    id: "6",
     name: "Authentication",
     tags: ["Mongoose", "MD5", "bcrypt"],
     summary:
@@ -226,7 +199,7 @@ const projects2 = [
     img: assets.images.auth,
   },
   {
-    id: "5",
+    id: "7",
     name: "Wiki Api",
     tags: ["REST"],
     summary:
@@ -234,6 +207,34 @@ const projects2 = [
     url1: "https://github.com/thakurnitin2684/wiki-api-rest",
     url2: "https://github.com/thakurnitin2684/wiki-api-rest",
     img: assets.images.rest,
+  },
+  {
+    id: "8",
+    name: "Stick-Around",
+    tags: ["Unity", "C#", "Game"],
+    summary: "Minimal Game made with Unity Game development engine.",
+    url1: "https://play.google.com/store/apps/details?id=com.thakurnitin.StickAround&hl=en",
+    url2: "https://github.com/thakurnitin2684/Stick-Around",
+    img: assets.images.stick,
+  },
+  {
+    id: "9",
+    name: "Naksha Home Decor",
+    tags: ["Html", "CSS"],
+    summary:
+      "WebDevelopment Project. Static Business Website for Home Decor selling shop.",
+    url1: "https://thakurnitin2684.github.io/nakshahomedecor/",
+    url2: "https://github.com/thakurnitin2684/nakshahomedecor",
+    img: assets.images.naksha,
+  },
+  {
+    id: "10",
+    name: "Alarm Clock",
+    tags: ["Python", "Tkiner"],
+    summary: "Python project- Alarm Clock Made using Tkinder GUI Toolkit",
+    url1: "https://github.com/thakurnitin2684/Python-tkinter#python-tkinter",
+    url2: "https://github.com/thakurnitin2684/Python-tkinter",
+    img: assets.images.alarm,
   },
 ];
 
@@ -329,6 +330,34 @@ const experienceData2 = [
       "Jawahar Navodaya Vidyalaya , Pandoh ●Graduated with 10 CGPA in class 10th, CBSE.\n●Graduated with 94.2% in class 12th,CBSE.",
   },
 ];
+
+const skillsData = {
+  languages: [
+    { name: "C/C++" },
+    { name: "Kotlin" },
+    { name: "Python" },
+    { name: "HTML/CSS/JS" },
+  ],
+
+  technologies: [
+    { name: "Android Development", prof: true },
+    { name: "React.js", prof: false },
+    { name: "React-Native", prof: false },
+    { name: "Express.js", prof: false },
+    { name: "jQuery", prof: false },
+    { name: "Mongoose", prof: false },
+  ],
+  dbms: [{ name: "SQL" }, { name: "MongoDB" }, { name: "Firebase Firebase" }],
+
+  other: [
+    { name: "REST" },
+    { name: "MVVM" },
+    { name: "Firebase" },
+    { name: "EJS" },
+    { name: "Cloud Computing" },
+  ],
+};
+
 export {
   androidProjects,
   projects1,
@@ -336,4 +365,5 @@ export {
   coursesData,
   experienceData1,
   experienceData2,
+  skillsData,
 };

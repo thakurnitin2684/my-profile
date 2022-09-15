@@ -64,6 +64,7 @@ export const url = {
   linkedIn: "https://www.linkedin.com/in/nitin-thakur-21b85217a/",
   play_store: "https://play.google.com/store/apps/dev?id=8999496725506103336",
   gfg: "https://auth.geeksforgeeks.org/user/nitinthakur1",
+  cv: "https://drive.google.com/file/d/1TbR4T5_rlj7VMgqZWr47l7oiYogJd-XE/view?usp=sharing",
 };
 
 export const images = {

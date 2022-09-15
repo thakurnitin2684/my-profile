@@ -8,7 +8,6 @@ import { coursesData } from "../utils/DataFile";
 
 function Courses() {
   return (
-    // <Zoom>
     <div className="coursesInnerContainer">
       <h2 id="courses" className="sectionHeading">
         {assets.strings.txt_courses}
@@ -17,17 +16,18 @@ function Courses() {
       <div className="courseGrid">
         {coursesData &&
           coursesData.map((x) => (
-            <CourseCard
-              id={x.id}
-              title={x.title}
-              company={x.company}
-              url={x.url}
-              img={x.img}
-            />
+            <Zoom>
+              <CourseCard
+                id={x.id}
+                title={x.title}
+                company={x.company}
+                url={x.url}
+                img={x.img}
+              />
+            </Zoom>
           ))}
       </div>
     </div>
-    // </Zoom>
   );
 }
 
