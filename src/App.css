@@ -35,7 +35,6 @@ body {
   background-color: var(--mattBlack);
 }
 .SidebarSmall {
-  /* height: 60px; */
   background-color: var(--mattBlack);
   position: fixed;
   top: 0;
@@ -69,9 +68,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .MainContent {
-    /* flex: 100%; */
-  }
   .SidebarBig {
     display: none;
   }
@@ -91,7 +87,6 @@ body {
   }
   .SidebarSmall {
     display: none;
-    /* font-size: small; */
   }
 }
 

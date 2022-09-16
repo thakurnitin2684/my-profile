@@ -29,9 +29,12 @@ function Home() {
 
           <div className="labelContainer">
             <Fade bottom>
-              <h1 className="Title">Nitin Thakur</h1>
+              <h1 className="Title">{assets.strings.txt_nitin_thakur}</h1>
               <h3 className="subTitle">
-                I'm a <span className="seText">Software Engineer </span>
+                I'm a{" "}
+                <span className="seText">
+                  {assets.strings.txt_software_eng}
+                </span>
               </h3>
             </Fade>
           </div>

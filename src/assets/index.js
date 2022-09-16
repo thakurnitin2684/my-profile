@@ -44,6 +44,8 @@ export const colors = {
 };
 
 export const strings = {
+  txt_nitin_thakur: "Nitin Thakur",
+
   txt_my_bio:
     "Enthusiastic Software Developer, proficient in android development , learning and eager to learn new technologies. A good problem solver and having in-depth knowledge in DSA and core CSE subjects like DBMS,OOPS,OS. Focused on achieving project objectives with speed and accuracy. Lastly, always love to create and find creative solutions.",
   txt_contact_me: "Contact me",
@@ -57,6 +59,13 @@ export const strings = {
   txt_courses: "Courses",
   txt_get_in_touch: "Get In touch",
   txt_android_projects: "Android Projects",
+  txt_other_projects: "Other Projects",
+  txt_basic_projects: "Basic projects for learning",
+  txt_software_eng: "Software Engineer",
+  txt_libraries: "Libraries/Technologies",
+  txt_languages: "Languages",
+  txt_dbms: "DBMS",
+  txt_other_mentions: "Other mentions",
 };
 
 export const url = {

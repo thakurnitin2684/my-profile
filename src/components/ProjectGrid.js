@@ -64,57 +64,131 @@ export function ProjectGrid({ id, name, tags, summary, url1, url2, img }) {
 }
 
 export function BasicProjectGrid({ id, name, tags, summary, url1, url2, img }) {
+  const { height, width } = useWindowDimensions();
+  const [isMobile, setMobile] = useState(width < 900);
+
+  useEffect(() => {
+    if (width < 900) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, [width]);
+
   return (
     <Zoom>
-      <div>
-        <div className="basic-item">
-          <div>
-            <img className="basiccard-img" src={img} alt="p_img" />
-            <div className="basiccard-content">
-              <h1 className="basiccard-header">{name}</h1>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                }}
-              >
-                {tags &&
-                  tags.map((x) => (
-                    <p className="basicproject-tag">
-                      <span className="basictag-span">{x}</span>
-                    </p>
-                  ))}
+      {isMobile ? (
+        <div>
+          <div className="mbasic-item">
+            <div>
+              <div className="mobileBasicTop">
+                <img className="mbasiccard-img" src={img} alt="p_img" />
+                <div
+                  style={{
+                    flex: 1,
+                    marginLeft: 5,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItem: "center",
+                  }}
+                >
+                  <button
+                    className="basiccard-btn"
+                    style={{
+                      width: "80%",
+                      margin: 3,
+                      fontSize: 13,
+                    }}
+                    onClick={() => window.open(`${url1}`, "_blank")}
+                  >
+                    View <span>&rarr;</span>
+                  </button>
+                  <button
+                    class="basiccard-btn"
+                    style={{
+                      width: "80%",
+                      margin: 3,
+                      fontSize: 13,
+                    }}
+                    onClick={() => window.open(`${url2}`, "_blank")}
+                  >
+                    Code <span>&lt;/&gt;</span>
+                  </button>
+                </div>
               </div>
-              <p className="basiccard-text">{summary}</p>
-              <div
-                style={{
-                  width: "90%",
-                  position: "absolute",
-                  bottom: 15,
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItem: "flex-end",
-                }}
-              >
-                <button
-                  className="basiccard-btn"
-                  onClick={() => window.open(`${url1}`, "_blank")}
+              <div className="basiccard-content">
+                <h1 className="basiccard-header">{name}</h1>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                  }}
                 >
-                  View <span>&rarr;</span>
-                </button>
-                <button
-                  class="basiccard-btn"
-                  onClick={() => window.open(`${url2}`, "_blank")}
-                >
-                  Code <span>&lt;/&gt;</span>
-                </button>
+                  {tags &&
+                    tags.map((x) => (
+                      <p className="basicproject-tag">
+                        <span className="basictag-span">{x}</span>
+                      </p>
+                    ))}
+                </div>
+                <p className="basiccard-text">{summary}</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div>
+          <div className="basic-item">
+            <div>
+              <img className="basiccard-img" src={img} alt="p_img" />
+              <div className="basiccard-content">
+                <h1 className="basiccard-header">{name}</h1>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                  }}
+                >
+                  {tags &&
+                    tags.map((x) => (
+                      <p className="basicproject-tag">
+                        <span className="basictag-span">{x}</span>
+                      </p>
+                    ))}
+                </div>
+                <p className="basiccard-text">{summary}</p>
+                <div
+                  style={{
+                    width: "90%",
+                    position: "absolute",
+                    bottom: 15,
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItem: "flex-end",
+                  }}
+                >
+                  <button
+                    className="basiccard-btn"
+                    onClick={() => window.open(`${url1}`, "_blank")}
+                  >
+                    View <span>&rarr;</span>
+                  </button>
+                  <button
+                    class="basiccard-btn"
+                    onClick={() => window.open(`${url2}`, "_blank")}
+                  >
+                    Code <span>&lt;/&gt;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Zoom>
   );
 }

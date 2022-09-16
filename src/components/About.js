@@ -20,7 +20,9 @@ function About() {
       <p className="subHeading">{assets.strings.txt_skills}</p>
 
       <div>
-        <h4 style={{ margin: "0px", color: "grey" }}>Libraries/Technologies</h4>
+        <h4 style={{ margin: "0px", color: "grey" }}>
+          {assets.strings.txt_libraries}
+        </h4>
       </div>
 
       <Fade>
@@ -39,7 +41,9 @@ function About() {
       </Fade>
 
       <div>
-        <h4 style={{ margin: "0px", color: "grey" }}>Languages</h4>
+        <h4 style={{ margin: "0px", color: "grey" }}>
+          {assets.strings.txt_languages}
+        </h4>
       </div>
 
       <Fade>
@@ -53,7 +57,9 @@ function About() {
       </Fade>
 
       <div>
-        <h4 style={{ margin: "0px", color: "grey" }}>DBMS</h4>
+        <h4 style={{ margin: "0px", color: "grey" }}>
+          {assets.strings.txt_dbms}
+        </h4>
       </div>
 
       <Fade>
@@ -67,7 +73,9 @@ function About() {
       </Fade>
 
       <div>
-        <h4 style={{ margin: "0px", color: "grey" }}>Other mentions</h4>
+        <h4 style={{ margin: "0px", color: "grey" }}>
+          {assets.strings.txt_other_mentions}
+        </h4>
       </div>
 
       <Fade>

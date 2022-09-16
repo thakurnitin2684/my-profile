@@ -13,7 +13,6 @@ import * as assets from "../assets";
 
 function Projects() {
   return (
-    // <Zoom>
     <div class="projectInnerContainer">
       <h2 id="projects" className="sectionHeading">
         {assets.strings.txt_projects}
@@ -37,7 +36,7 @@ function Projects() {
           ))}
       </div>
 
-      <h2 className="subHeading">Other Projects</h2>
+      <h2 className="subHeading">{assets.strings.txt_other_projects}</h2>
 
       <div className="grid">
         {projects1 &&
@@ -54,7 +53,7 @@ function Projects() {
           ))}
       </div>
 
-      <h2 className="subHeading">Basic projects for learning </h2>
+      <h2 className="subHeading">{assets.strings.txt_basic_projects} </h2>
 
       <div className="basicGrid">
         {projects2 &&
@@ -71,7 +70,6 @@ function Projects() {
           ))}
       </div>
     </div>
-    // </Zoom>
   );
 }
 
