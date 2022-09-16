@@ -10,7 +10,14 @@ const androidProjects = [
     url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.screentimerank",
     url2: "https://github.com/thakurnitin2684/ScreenTimeRank",
     img: assets.images.screentime,
-    ss: [assets.images.str1, assets.images.str2, assets.images.str0],
+    ss: [
+      assets.images.str1,
+      assets.images.str2,
+      assets.images.str3,
+      assets.images.str4,
+      assets.images.str5,
+      assets.images.str0,
+    ],
     Overview: [
       "Firebase",
       "MVVM",
@@ -34,7 +41,14 @@ const androidProjects = [
     url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.mytasks",
     url2: "https://github.com/thakurnitin2684/MyTasks",
     img: assets.images.mytasks,
-    ss: [assets.images.str1, assets.images.str2, assets.images.mt0],
+    ss: [
+      assets.images.mt1,
+      assets.images.mt2,
+      assets.images.mt3,
+      assets.images.mt4,
+      assets.images.mt5,
+      assets.images.mt0,
+    ],
     Overview: [
       "ROOM DB",
       "MVVM",
@@ -56,7 +70,14 @@ const androidProjects = [
     url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.codeforces",
     url2: "https://github.com/thakurnitin2684/Codeforces.info",
     img: assets.images.codeforces,
-    ss: [assets.images.str1, assets.images.str2, assets.images.cf0],
+    ss: [
+      assets.images.cf1,
+      assets.images.cf2,
+      assets.images.cf3,
+      assets.images.cf4,
+      assets.images.cf5,
+      assets.images.cf0,
+    ],
     Overview: [
       "MVVM",
       "Kotlin",

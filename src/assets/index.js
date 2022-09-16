@@ -13,8 +13,6 @@ import STICK from "./images/stick.png";
 import TTT from "./images/ttt.png";
 import WHATSAPP from "./images/whatsapp.png";
 import GOOGLE_PLAY from "./images/google_play.png";
-import STR1 from "./images/str1.png";
-import STR2 from "./images/str2.png";
 import GFG from "./images/gfg.png";
 import CF0 from "./images/cf0.PNG";
 import MT0 from "./images/mt0.PNG";
@@ -37,6 +35,21 @@ import CLOUD_C from "./images/cloud_c.PNG";
 import FIREBASE_C from "./images/firebase_c.PNG";
 import IJP_C from "./images/ijp_c.PNG";
 import REACT_C from "./images/react_c.PNG";
+import STR1 from "./images/str1.png";
+import STR2 from "./images/str2.png";
+import STR3 from "./images/str3.png";
+import STR4 from "./images/str4.png";
+import STR5 from "./images/str5.png";
+import MT1 from "./images/mt1.png";
+import MT2 from "./images/mt2.png";
+import MT3 from "./images/mt3.png";
+import MT4 from "./images/mt4.png";
+import MT5 from "./images/mt5.png";
+import CF1 from "./images/cf1.png";
+import CF2 from "./images/cf2.png";
+import CF3 from "./images/cf3.png";
+import CF4 from "./images/cf4.png";
+import CF5 from "./images/cf5.png";
 
 export const colors = {
   PrimaryBlue: "#378AFF",
@@ -73,7 +86,7 @@ export const url = {
   linkedIn: "https://www.linkedin.com/in/nitin-thakur-21b85217a/",
   play_store: "https://play.google.com/store/apps/dev?id=8999496725506103336",
   gfg: "https://auth.geeksforgeeks.org/user/nitinthakur1",
-  cv: "https://drive.google.com/file/d/1TbR4T5_rlj7VMgqZWr47l7oiYogJd-XE/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1JOB5gwj8L97eZxYuSUwmmMP8LuJVnvPz/view?usp=sharing",
 };
 
 export const images = {
@@ -92,8 +105,6 @@ export const images = {
   ttt: TTT,
   whatsapp: WHATSAPP,
   google_play: GOOGLE_PLAY,
-  str1: STR1,
-  str2: STR2,
   gfg: GFG,
   cf0: CF0,
   mt0: MT0,
@@ -116,7 +127,19 @@ export const images = {
   firebase_c: FIREBASE_C,
   ijp_c: IJP_C,
   react_c: REACT_C,
+  str1: STR1,
+  str2: STR2,
+  str3: STR3,
+  str4: STR4,
+  str5: STR5,
+  mt1: MT1,
+  mt2: MT2,
+  mt3: MT3,
+  mt4: MT4,
+  mt5: MT5,
+  cf1: CF1,
+  cf2: CF2,
+  cf3: CF3,
+  cf4: CF4,
+  cf5: CF5,
 };
-
-// export default colors;
-// export { strings, images };
