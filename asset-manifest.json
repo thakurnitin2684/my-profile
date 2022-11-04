@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-profile/static/css/main.0a326aec.chunk.css",
-    "main.js": "/my-profile/static/js/main.d6a9f18c.chunk.js",
-    "main.js.map": "/my-profile/static/js/main.d6a9f18c.chunk.js.map",
+    "main.js": "/my-profile/static/js/main.ad7c0c17.chunk.js",
+    "main.js.map": "/my-profile/static/js/main.ad7c0c17.chunk.js.map",
     "runtime-main.js": "/my-profile/static/js/runtime-main.8da051bb.js",
     "runtime-main.js.map": "/my-profile/static/js/runtime-main.8da051bb.js.map",
     "static/css/2.5fa47e7a.chunk.css": "/my-profile/static/css/2.5fa47e7a.chunk.css",
@@ -47,6 +47,7 @@
     "static/media/react_c.fecabb24.PNG": "/my-profile/static/media/react_c.fecabb24.PNG",
     "static/media/registration.9ee63fdc.PNG": "/my-profile/static/media/registration.9ee63fdc.PNG",
     "static/media/rest.25e2d9b1.png": "/my-profile/static/media/rest.25e2d9b1.png",
+    "static/media/rn_certi.1e68588f.jpg": "/my-profile/static/media/rn_certi.1e68588f.jpg",
     "static/media/rn_nav.50d9996b.png": "/my-profile/static/media/rn_nav.50d9996b.png",
     "static/media/screentime.f3ed72c5.png": "/my-profile/static/media/screentime.f3ed72c5.png",
     "static/media/str0.2e602746.PNG": "/my-profile/static/media/str0.2e602746.PNG",
@@ -61,6 +62,6 @@
     "static/css/2.5fa47e7a.chunk.css",
     "static/js/2.527dd59b.chunk.js",
     "static/css/main.0a326aec.chunk.css",
-    "static/js/main.d6a9f18c.chunk.js"
+    "static/js/main.ad7c0c17.chunk.js"
   ]
 }
