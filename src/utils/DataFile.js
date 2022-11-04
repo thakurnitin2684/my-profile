@@ -303,6 +303,13 @@ const coursesData = [
     url: "https://drive.google.com/file/d/1bqYgOvHRGWcXFSS06-gY-48yB8oXLoOQ/view?usp=sharing",
     img: assets.images.firebase_c,
   },
+  {
+    id: "7",
+    title: "React-Native",
+    company: "Udemy",
+    url: "https://drive.google.com/file/d/1XFcqNdlLI5Ak4mVX95weAhlR51WtOkUR/view?usp=sharing",
+    img: assets.images.rn_c,
+  },
 ];
 
 const experienceData1 = [

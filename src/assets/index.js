@@ -35,6 +35,7 @@ import CLOUD_C from "./images/cloud_c.PNG";
 import FIREBASE_C from "./images/firebase_c.PNG";
 import IJP_C from "./images/ijp_c.PNG";
 import REACT_C from "./images/react_c.PNG";
+import RN_C from "./images/rn_certi.jpg";
 import STR1 from "./images/str1.png";
 import STR2 from "./images/str2.png";
 import STR3 from "./images/str3.png";
@@ -127,6 +128,7 @@ export const images = {
   firebase_c: FIREBASE_C,
   ijp_c: IJP_C,
   react_c: REACT_C,
+  rn_c: RN_C,
   str1: STR1,
   str2: STR2,
   str3: STR3,
