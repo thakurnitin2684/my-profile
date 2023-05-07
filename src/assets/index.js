@@ -52,6 +52,7 @@ import CF3 from "./images/cf3.png";
 import CF4 from "./images/cf4.png";
 import CF5 from "./images/cf5.png";
 import ExpenseTracker from "./images/expenseTracker.png";
+import MSFastApi from "./images/msFastApi.png";
 
 export const colors = {
   PrimaryBlue: "#378AFF",
@@ -146,4 +147,5 @@ export const images = {
   cf4: CF4,
   cf5: CF5,
   expenseTracker: ExpenseTracker,
+  msFastApi: MSFastApi,
 };
