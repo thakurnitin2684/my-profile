@@ -95,33 +95,33 @@ const androidProjects = [
 const projects1 = [
   {
     id: "1",
+    name: "Expense Tracker",
+    tags: ["React-Native", "React-context-API", "Firebase-Auth"],
+    summary:
+      "A Mobile App for tracking personal expenses with data of each authenticated user stored in cloud.",
+    url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.expenseTracker",
+    url2: "https://github.com/thakurnitin2684/ExpenseTracker",
+    img: assets.images.expenseTracker,
+  },
+  {
+    id: "2",
+    name: "To-DO List",
+    tags: ["express", "mongoose", "ejs"],
+    summary:
+      "A simple todo app made with express, hosted on heroku and mongoose on atlas.",
+    url1: "https://todoweb-u21h.onrender.com/",
+    url2: "https://github.com/thakurnitin2684/todo",
+    img: assets.images.todo,
+  },
+  {
+    id: "3",
     name: "Notes app",
     tags: ["REACT"],
     summary: "A note taking app made with react",
     url1: "https://thakurnitin2684.github.io/react-notes/",
     url2: "https://github.com/thakurnitin2684/react-notes",
     img: assets.images.notes,
-  },
-  {
-    id: "2",
-    name: "React-native Navigation",
-    tags: ["Navigation", "redux", "context-api"],
-    summary:
-      "React-Native app to understand navigation. Demonstrates stack, drawer,bottom,nested navigation.",
-    url1: "https://github.com/thakurnitin2684/RN-Navigation#rn-navigation",
-    url2: "https://github.com/thakurnitin2684/RN-Navigation",
-    img: assets.images.rn_nav,
-  },
-  {
-    id: "3",
-    name: "To-DO List",
-    tags: ["express", "mongoose", "ejs"],
-    summary:
-      "A simple todo app made with express, hosted on heroku and mongoose on atlas.",
-    url1: "https://mighty-cliffs-15447.herokuapp.com/",
-    url2: "https://github.com/thakurnitin2684/todo",
-    img: assets.images.todo,
-  },
+  },  
   {
     id: "4",
     name: "TIC TAC TOE",
@@ -131,17 +131,16 @@ const projects1 = [
     url2: "https://github.com/thakurnitin2684/tictactoe",
     img: assets.images.ttt,
   },
-
-  {
+ {
     id: "5",
-    name: "To-DO List REACT",
-    tags: ["REACT"],
-    summary: "A static to-do list app made with react",
-    url1: "https://thakurnitin2684.github.io/react-todo/",
-    url2: "https://github.com/thakurnitin2684/react-todo",
-    img: assets.images.todo_react,
+    name: "React-native Navigation",
+    tags: ["Navigation", "redux", "context-api"],
+    summary:
+      "React-Native app to understand navigation. Demonstrates stack, drawer,bottom,nested navigation.",
+    url1: "https://github.com/thakurnitin2684/RN-Navigation#rn-navigation",
+    url2: "https://github.com/thakurnitin2684/RN-Navigation",
+    img: assets.images.rn_nav,
   },
-
   {
     id: "6",
     name: "Box-Office",
@@ -161,6 +160,15 @@ const projects1 = [
     url2: "https://github.com/thakurnitin2684/GuessMyNumber",
     img: assets.images.gnm,
   },
+   {
+    id: "8",
+    name: "To-DO List REACT",
+    tags: ["REACT"],
+    summary: "A static to-do list app made with react",
+    url1: "https://thakurnitin2684.github.io/react-todo/",
+    url2: "https://github.com/thakurnitin2684/react-todo",
+    img: assets.images.todo_react,
+  },
 ];
 
 const projects2 = [
@@ -178,7 +186,7 @@ const projects2 = [
     name: "News-Letter",
     tags: ["nodejs", "express", "js"],
     summary: "Newsletter web app using mailchimp api. Hosted on heroku.",
-    url1: "https://glacial-depths-73026.herokuapp.com/",
+    url1: "https://newsletter-1kcm.onrender.com/",
     url2: "https://github.com/thakurnitin2684/NewletterDemo",
     img: assets.images.newsletter,
   },
@@ -371,13 +379,17 @@ const skillsData = {
     { name: "Android Development", prof: true },
     { name: "React.js", prof: false },
     { name: "React-Native", prof: false },
-    { name: "Express.js", prof: false },
-    { name: "jQuery", prof: false },
-    { name: "Mongoose", prof: false },
+    { name: "MERN stack", prof: false },
+    { name: "Fast-API", prof: false },
   ],
-  dbms: [{ name: "SQL" }, { name: "MongoDB" }, { name: "Firebase Firebase" }],
+  dbms: [{ name: "SQL" }, { name: "MongoDB" }, { name: "Firebase" }],
 
   other: [
+    { name: "Data Structures & Algorithm" },
+    { name: "OOPs" },
+    { name: "DBMS" },
+    { name: "Operating System" },
+    { name: "Computer Networks" },
     { name: "REST" },
     { name: "MVVM" },
     { name: "Firebase" },
