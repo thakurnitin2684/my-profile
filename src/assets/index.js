@@ -51,6 +51,7 @@ import CF2 from "./images/cf2.png";
 import CF3 from "./images/cf3.png";
 import CF4 from "./images/cf4.png";
 import CF5 from "./images/cf5.png";
+import ExpenseTracker from "./images/expenseTracker.png";
 
 export const colors = {
   PrimaryBlue: "#378AFF",
@@ -87,7 +88,7 @@ export const url = {
   linkedIn: "https://www.linkedin.com/in/nitin-thakur-21b85217a/",
   play_store: "https://play.google.com/store/apps/dev?id=8999496725506103336",
   gfg: "https://auth.geeksforgeeks.org/user/nitinthakur1",
-  cv: "https://drive.google.com/file/d/1JOB5gwj8L97eZxYuSUwmmMP8LuJVnvPz/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1_UybPFSJYdFtYOu-K1PqC6kgNlaNb_pG/view?usp=sharing",
 };
 
 export const images = {
@@ -144,4 +145,5 @@ export const images = {
   cf3: CF3,
   cf4: CF4,
   cf5: CF5,
+  expenseTracker: ExpenseTracker,
 };
