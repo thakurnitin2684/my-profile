@@ -60,8 +60,8 @@ export const colors = {
 export const strings = {
   txt_nitin_thakur: "Nitin Thakur",
 
-  txt_my_bio:
-    "Enthusiastic Software Developer, proficient in android development , learning and eager to learn new technologies. A good problem solver and having in-depth knowledge in DSA and core CSE subjects like DBMS,OOPS,OS. Focused on achieving project objectives with speed and accuracy. Lastly, always love to create and find creative solutions.",
+  txt_ y_bio:
+    "Passionate Software Engineer, a good problem solver, having in-depth knowledge in Data Structures and Algorithm and core Computer Science subjects. Deeply interested in development. Eager to learn.",
   txt_contact_me: "Contact me",
   txt_download_dv: "Download CV",
   txt_scroll_down: "Scroll Down",
