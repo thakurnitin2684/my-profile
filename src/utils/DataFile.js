@@ -121,9 +121,18 @@ const projects1 = [
     url1: "https://thakurnitin2684.github.io/react-notes/",
     url2: "https://github.com/thakurnitin2684/react-notes",
     img: assets.images.notes,
-  },  
+  }, 
   {
     id: "4",
+    name: "Microservices-Fast-API,
+    tags: ["Fast-API", "Python", "React"],
+    summary: "Fast-API backend with microservices, connected with React Frontend",
+    url1: "https://github.com/thakurnitin2684/Microservices-FastAPI#microservices-fast-api",
+    url2: "https://github.com/thakurnitin2684/Microservices-FastAPI",
+    img: assets.images.msFastApi,
+  },
+  {
+    id: "5",
     name: "TIC TAC TOE",
     tags: ["React.js", "Javascript", "SCSS"],
     summary: "Tic tac toe game made with react.js",
@@ -132,7 +141,7 @@ const projects1 = [
     img: assets.images.ttt,
   },
  {
-    id: "5",
+    id: "6",
     name: "React-native Navigation",
     tags: ["Navigation", "redux", "context-api"],
     summary:
@@ -142,7 +151,7 @@ const projects1 = [
     img: assets.images.rn_nav,
   },
   {
-    id: "6",
+    id: "7",
     name: "Box-Office",
     tags: ["React.js", "Styled components"],
     summary:
@@ -152,7 +161,7 @@ const projects1 = [
     img: assets.images.boxoffice,
   },
   {
-    id: "7",
+    id: "8",
     name: "Guess My Number",
     tags: ["React Native", "Expo"],
     summary: "React Native game app of guessing numbers.",
@@ -161,7 +170,7 @@ const projects1 = [
     img: assets.images.gnm,
   },
    {
-    id: "8",
+    id: "9",
     name: "To-DO List REACT",
     tags: ["REACT"],
     summary: "A static to-do list app made with react",
