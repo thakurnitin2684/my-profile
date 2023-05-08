@@ -61,8 +61,7 @@ export const colors = {
 
 export const strings = {
   txt_nitin_thakur: "Nitin Thakur",
-
-  txt_ y_bio:
+  txt_my_bio:
     "Passionate Software Engineer, a good problem solver, having in-depth knowledge in Data Structures and Algorithm and core Computer Science subjects. Deeply interested in development. Eager to learn.",
   txt_contact_me: "Contact me",
   txt_download_dv: "Download CV",

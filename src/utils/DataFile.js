@@ -96,7 +96,7 @@ const projects1 = [
   {
     id: "1",
     name: "Expense Tracker",
-    tags: ["React-Native", "React-context-API", "Firebase-Auth"],
+    tags: ["React-Native", "context-API", "Firebase-Auth"],
     summary:
       "A Mobile App for tracking personal expenses with data of each authenticated user stored in cloud.",
     url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.expenseTracker",
@@ -121,12 +121,13 @@ const projects1 = [
     url1: "https://thakurnitin2684.github.io/react-notes/",
     url2: "https://github.com/thakurnitin2684/react-notes",
     img: assets.images.notes,
-  }, 
+  },
   {
     id: "4",
-    name: "Microservices-Fast-API,
+    name: "Microservices-Fast-API",
     tags: ["Fast-API", "Python", "React"],
-    summary: "Fast-API backend with microservices, connected with React Frontend",
+    summary:
+      "Fast-API backend with microservices, connected with React Frontend",
     url1: "https://github.com/thakurnitin2684/Microservices-FastAPI#microservices-fast-api",
     url2: "https://github.com/thakurnitin2684/Microservices-FastAPI",
     img: assets.images.msFastApi,
@@ -140,7 +141,7 @@ const projects1 = [
     url2: "https://github.com/thakurnitin2684/tictactoe",
     img: assets.images.ttt,
   },
- {
+  {
     id: "6",
     name: "React-native Navigation",
     tags: ["Navigation", "redux", "context-api"],
@@ -169,7 +170,7 @@ const projects1 = [
     url2: "https://github.com/thakurnitin2684/GuessMyNumber",
     img: assets.images.gnm,
   },
-   {
+  {
     id: "9",
     name: "To-DO List REACT",
     tags: ["REACT"],
