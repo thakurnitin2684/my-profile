@@ -62,7 +62,7 @@ export const colors = {
 export const strings = {
   txt_nitin_thakur: "Nitin Thakur",
   txt_my_bio:
-    "Passionate Software Engineer, a good problem solver, having in-depth knowledge in Data Structures and Algorithm and core Computer Science subjects. Deeply interested in development. Eager to learn.",
+    "As a software engineer, I'm deeply engaged in problem-solving and possess a strong command of Data Structures and Algorithms, along with a solid grasp of computer science theory. My passion lies in development, embracing daily challenges as opportunities to grow. Eager to learn, I eagerly tackle new concepts and technologies, driven by a relentless curiosity for innovation and improvement.",
   txt_contact_me: "Contact me",
   txt_download_dv: "Download CV",
   txt_scroll_down: "Scroll Down",
