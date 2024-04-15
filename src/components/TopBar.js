@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 function TopBar() {
   const [currentChannel, setCurrentChannel] = useState("");
-
+  const [currentLink, setCurrentLink] = useState("");
   function onItemClick(index) {
     setCurrentLink(index);
   }

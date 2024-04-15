@@ -63,6 +63,18 @@ const androidProjects = [
   },
   {
     id: "project3",
+    name: "Expense Tracker",
+    tags: ["React-Native"],
+    summary:
+      "A Mobile App for tracking personal expenses with data of each authenticated user stored in cloud.",
+    url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.expenseTracker",
+    url2: "https://github.com/thakurnitin2684/ExpenseTracker",
+    img: assets.images.expenseTracker,
+    ss: [assets.images.expenseTracker],
+    Overview: ["React-Native", "Context-API", "Firebase-Auth"],
+  },
+  {
+    id: "project4",
     name: "Codefoces.info",
     tags: ["MVVM with RETROFIT"],
     summary:
@@ -95,16 +107,6 @@ const androidProjects = [
 const projects1 = [
   {
     id: "1",
-    name: "Expense Tracker",
-    tags: ["React-Native", "context-API", "Firebase-Auth"],
-    summary:
-      "A Mobile App for tracking personal expenses with data of each authenticated user stored in cloud.",
-    url1: "https://play.google.com/store/apps/details?id=com.thakurnitin2684.expenseTracker",
-    url2: "https://github.com/thakurnitin2684/ExpenseTracker",
-    img: assets.images.expenseTracker,
-  },
-  {
-    id: "2",
     name: "To-DO List",
     tags: ["express", "mongoose", "ejs"],
     summary:
@@ -114,7 +116,7 @@ const projects1 = [
     img: assets.images.todo,
   },
   {
-    id: "3",
+    id: "2",
     name: "Notes app",
     tags: ["REACT"],
     summary: "A note taking app made with react",
@@ -123,7 +125,7 @@ const projects1 = [
     img: assets.images.notes,
   },
   {
-    id: "4",
+    id: "3",
     name: "Microservices-Fast-API",
     tags: ["Fast-API", "Python", "React"],
     summary:
@@ -133,7 +135,7 @@ const projects1 = [
     img: assets.images.msFastApi,
   },
   {
-    id: "5",
+    id: "4",
     name: "TIC TAC TOE",
     tags: ["React.js", "Javascript", "SCSS"],
     summary: "Tic tac toe game made with react.js",
@@ -142,7 +144,7 @@ const projects1 = [
     img: assets.images.ttt,
   },
   {
-    id: "6",
+    id: "5",
     name: "React-native Navigation",
     tags: ["Navigation", "redux", "context-api"],
     summary:
@@ -152,7 +154,7 @@ const projects1 = [
     img: assets.images.rn_nav,
   },
   {
-    id: "7",
+    id: "6",
     name: "Box-Office",
     tags: ["React.js", "Styled components"],
     summary:
@@ -162,7 +164,7 @@ const projects1 = [
     img: assets.images.boxoffice,
   },
   {
-    id: "8",
+    id: "7",
     name: "Guess My Number",
     tags: ["React Native", "Expo"],
     summary: "React Native game app of guessing numbers.",
@@ -171,7 +173,7 @@ const projects1 = [
     img: assets.images.gnm,
   },
   {
-    id: "9",
+    id: "8",
     name: "To-DO List REACT",
     tags: ["REACT"],
     summary: "A static to-do list app made with react",
@@ -380,17 +382,18 @@ const experienceData2 = [
 const skillsData = {
   languages: [
     { name: "C/C++" },
-    { name: "Kotlin" },
     { name: "Python" },
+    { name: "Kotlin" },
     { name: "HTML/CSS/JS" },
   ],
 
   technologies: [
-    { name: "Android Development", prof: true },
     { name: "React.js", prof: false },
     { name: "React-Native", prof: false },
-    { name: "MERN stack", prof: false },
+    { name: "Android Development", prof: false },
     { name: "Fast-API", prof: false },
+    { name: "MERN stack", prof: false },
+    { name: "Selenium", prof: false },
   ],
   dbms: [{ name: "SQL" }, { name: "MongoDB" }, { name: "Firebase" }],
 
