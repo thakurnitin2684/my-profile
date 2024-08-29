@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-profile/static/css/main.5e84eab1.chunk.css",
-    "main.js": "/my-profile/static/js/main.05fce477.chunk.js",
-    "main.js.map": "/my-profile/static/js/main.05fce477.chunk.js.map",
+    "main.js": "/my-profile/static/js/main.68e9afcf.chunk.js",
+    "main.js.map": "/my-profile/static/js/main.68e9afcf.chunk.js.map",
     "runtime-main.js": "/my-profile/static/js/runtime-main.8da051bb.js",
     "runtime-main.js.map": "/my-profile/static/js/runtime-main.8da051bb.js.map",
     "static/css/2.5fa47e7a.chunk.css": "/my-profile/static/css/2.5fa47e7a.chunk.css",
@@ -45,7 +45,7 @@
     "static/media/naksha.c0946d3a.png": "/my-profile/static/media/naksha.c0946d3a.png",
     "static/media/newsletter.4049f330.PNG": "/my-profile/static/media/newsletter.4049f330.PNG",
     "static/media/notes.a550dd04.PNG": "/my-profile/static/media/notes.a550dd04.PNG",
-    "static/media/profile.baa27420.jpg": "/my-profile/static/media/profile.baa27420.jpg",
+    "static/media/profile.cec85694.jpg": "/my-profile/static/media/profile.cec85694.jpg",
     "static/media/react_c.fecabb24.PNG": "/my-profile/static/media/react_c.fecabb24.PNG",
     "static/media/registration.9ee63fdc.PNG": "/my-profile/static/media/registration.9ee63fdc.PNG",
     "static/media/rest.25e2d9b1.png": "/my-profile/static/media/rest.25e2d9b1.png",
@@ -64,6 +64,6 @@
     "static/css/2.5fa47e7a.chunk.css",
     "static/js/2.6731c945.chunk.js",
     "static/css/main.5e84eab1.chunk.css",
-    "static/js/main.05fce477.chunk.js"
+    "static/js/main.68e9afcf.chunk.js"
   ]
 }
