@@ -381,19 +381,18 @@ const experienceData2 = [
 
 const skillsData = {
   languages: [
-    { name: "C/C++" },
     { name: "Python" },
-    { name: "Kotlin" },
+    { name: "C/C++" },
     { name: "HTML/CSS/JS" },
+    { name: "Kotlin" },
   ],
 
   technologies: [
     { name: "React.js", prof: false },
     { name: "React-Native", prof: false },
-    { name: "Android Development", prof: false },
+    { name: "Selenium/Appium", prof: false },
     { name: "Fast-API", prof: false },
-    { name: "MERN stack", prof: false },
-    { name: "Selenium", prof: false },
+    { name: "Android Development", prof: false },
   ],
   dbms: [{ name: "SQL" }, { name: "MongoDB" }, { name: "Firebase" }],
 
@@ -405,8 +404,6 @@ const skillsData = {
     { name: "Computer Networks" },
     { name: "REST" },
     { name: "MVVM" },
-    { name: "Firebase" },
-    { name: "EJS" },
     { name: "Cloud Computing" },
   ],
 };
